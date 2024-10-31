@@ -263,3 +263,11 @@ nav a:hover span {
                 width: 100%;
             }
         }
+
+@media (max-width: 800px) {
+            .image {
+                position: static; /* Đặt lại thành static khi màn hình nhỏ hơn 700px */
+                float: none; /* Bỏ float */
+                width: 100%; /* Đặt chiều rộng 100% nếu cần */
+            }
+        }
