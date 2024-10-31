@@ -161,6 +161,7 @@ footer h1 {
         list-style-type: none;
         padding: 10px;
         text-align: right;
+        margin-right: 15px;
     }
     
     .footer-menu ul li {
