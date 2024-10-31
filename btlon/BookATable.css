@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position: relative;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 0 auto;
+    top:15vh;
+}
+body{
+ background-color: #f9f5e8;
+margin:0;
+}
+
+
+.booking-section{
+    width: 70%;
+    margin: aut0;
+}
+header{
+    z-index: 2;
+    width: 100%;
+  min-height: 15vh;
+background-color:  antiquewhite;
+ position: fixed;
+}
+nav{
+    display: flex;
+    justify-content: center; 
+}
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+nav a:hover {
+    color: #0ef;
+}
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(180px);
+    opacity: 0;
+    transition: .6s;
+}
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+.booking-section {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input[type="date"] {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.time-slots {
+    margin-top: 20px;
+}
+
+.time-slots p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+button[type="button"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid black;
+    background-color: #f4f4f2;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+}
+
+button[type="button"].selected {
+    background-color: #5b6b34;
+    color: white;
+}
+
+.book-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #5b6b34;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+.book-now:hover {
+    background: #f4f4f2;
+    color: black;
+}
+
+footer {
+    position:relative;
+    padding-bottom: 0px;
+    margin-top: 20vh;
+};
+footer h2 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+footer h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+    @media only screen and (max-width: 800px){
+        .image img{
+            max-width: 50vh;
+        }
+    }
+    .business-card {
+        justify-content: space-between;
+       display: flex;
+       background-color: #C0C0C0;
+        padding-bottom:40px ;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .business-card h1,h2,.info{
+        padding: 10px;
+    }
+    .footer-content .logo {
+        width: 100px; /* Thay đổi kích thước logo nếu cần */
+        margin-bottom: 10px;
+    }
+    
+    .footer-menu ul {
+        list-style-type: none;
+        padding: 10px;
+        text-align: right;
+    }
+    
+    .footer-menu ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .footer-text {
+        font-size: 0.8em;
+        margin: 20px;
+    }
+    
+ 
+    .logo {
+        width: 50px;
+        margin-bottom: 20 px;
+    }
+    
+    .business-card .footer-text {
+        margin-top: 10px;
+    }
+    .footer {
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .col-1 {
+            width: 8.33%;
+        }
+    
+        .col-2 {
+            width: 16.66%;
+        }
+    
+        .col-3 {
+            width: 25%;
+        }
+    
+        .col-4 {
+            width: 33.33%;
+        }
+    
+        .col-5 {
+            width: 41.66%;
+        }
+    
+        .col-6 {
+            width: 50%;
+        }
+    
+        .col-7 {
+            width: 58.33%;
+        }
+    
+        .col-8 {
+            width: 66.66%;
+        }
+    
+        .col-9 {
+            width: 75%;
+        }
+    
+        .col-10 {
+            width: 83.33%;
+        }
+    
+        .col-11 {
+            width: 91.66%;
+        }
+    
+        .col-12 {
+            width: 100%;
+        }
+    }
