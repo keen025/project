@@ -1,0 +1,388 @@
+/* Đặt màu nền ngà */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+background-color: #eee;    
+margin:0;
+}
+header{
+    z-index: 2;
+    width: 100%;
+    width: 100%;
+    min-height: 15vh;
+background-color:  antiquewhite;;
+ position: fixed;
+}
+nav{
+    display: flex;
+    justify-content: center; 
+}
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+nav a:hover {
+    color: #0ef;
+}
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(180px);
+    opacity: 0;
+    transition: .6s;
+}
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f5e8; /* Màu nền ngà */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Đầu trang */
+
+/* Phần nội dung bên dưới header */
+
+/* Thanh điều hướng dọc bên phải */
+
+.background_img {
+    background: linear-gradient(to bottom, rgba(249, 245, 232, 0) 60%, #f9f5e8), 
+                url('home_img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Chiều cao toàn màn hình */
+    display: flex;
+    flex-direction: column;
+    color: white; /* Màu chữ */
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.our-menu {
+    display: flex;
+    align-items: flex-start; /* Căn các phần tử con từ đầu */
+    gap: 20px; /* Khoảng cách giữa h1 và đoạn p */
+    padding: 20px; /* Khoảng cách xung quanh */
+}
+
+.our-menu h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 50px;
+    width: auto;
+    white-space: nowrap; /* Giữ nguyên h1 trên một dòng */
+}
+
+.our-menu p {
+    max-width: 400px; /* Giới hạn chiều rộng của đoạn văn */
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 45px;
+}
+.ourmenu_img {
+    display: flex;
+    justify-content: center; /* Căn giữa các ảnh trong trang web */
+    gap: 20px; /* Khoảng cách giữa hai ảnh */
+    padding: 20px; /* Khoảng cách xung quanh phần chứa ảnh */
+    max-width: 100%; /* Đảm bảo phần chứa ảnh không vượt quá chiều rộng của trang */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.ourmenu_img img {
+    width: 45%; /* Đặt mỗi ảnh chiếm khoảng 45% chiều rộng phần chứa */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị thay đổi */
+    object-fit: cover; /* Đảm bảo ảnh hiển thị phù hợp trong không gian */
+    border-radius: 5px; /* Tạo góc bo cho ảnh nếu muốn */
+}
+.it {
+    display: flex;
+    align-items: flex-start; /* Căn các phần tử con từ đầu */
+    gap: 20px; /* Khoảng cách giữa h1 và đoạn p */
+    padding: 20px; /* Khoảng cách xung quanh */
+    background-color: aquamarine;
+    justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.it h1 {
+    font-size: 45px;
+    margin: 0;
+    padding: 50px;
+    width: auto;
+    white-space: nowrap; /* Giữ nguyên h1 trên một dòng */
+    margin-right: 20px; /* Thêm khoảng cách giữa h1 và p */
+}
+
+.it p {
+    max-width: 400px; /* Giới hạn chiều rộng của đoạn văn */
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 45px;
+}
+.pm {
+    display: flex;
+    align-items: center; /* Căn các phần tử con ở giữa theo chiều dọc */
+    justify-content: space-between; /* Đẩy h1 và p ra hai bên */
+    gap: 20px; /* Khoảng cách giữa h1 và p */
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.pm h1{
+    font-size: 30px;
+
+}
+.img {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.img > img {
+    height: 500px;
+    width: auto;
+}
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    height: 500px;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.square img:nth-child(1) {
+    grid-column: 1 / -1; /* Chiếm cả 2 cột trên cùng */
+    grid-row: 1; /* Chiếm hàng đầu tiên */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square img:nth-child(2) {
+    grid-column: 1; /* Ảnh thứ hai nằm ở góc dưới bên trái */
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square img:nth-child(3) {
+    grid-column: 2; /* Ảnh thứ ba nằm ở góc dưới bên phải */
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #C0C0C0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 98%;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+footer .header-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-size: 108px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.contact-info {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -40px; /* Đưa phần này lên trên 1 đoạn */
+    vertical-align: top;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Điều chỉnh điều hướng cho vị trí bên phải */
+footer {
+    position:relative;
+    padding-bottom: 0px;
+    margin-top: 20vh;
+};
+footer h2 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+footer h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+    @media only screen and (max-width: 800px){
+        .image img{
+            max-width: 50vh;
+        }
+    }
+    .business-card {
+        justify-content: space-between;
+       display: flex;
+       background-color: #C0C0C0;
+        padding-bottom:40px ;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .business-card h1,h2,.info{
+        padding: 10px;
+    }
+    .footer-content .logo {
+        width: 100px; /* Thay đổi kích thước logo nếu cần */
+        margin-bottom: 10px;
+    }
+    
+    .footer-menu ul {
+        list-style-type: none;
+        padding: 10px;
+        text-align: right;
+    }
+    
+    .footer-menu ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .footer-text {
+        font-size: 0.8em;
+        margin: 20px;
+    }
+    
+ 
+    .logo {
+        width: 50px;
+        margin-bottom: 20 px;
+    }
+    
+    .business-card .footer-text {
+        margin-top: 10px;
+    }
+    .footer {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .col-1 {
+            width: 8.33%;
+        }
+    
+        .col-2 {
+            width: 16.66%;
+        }
+    
+        .col-3 {
+            width: 25%;
+        }
+    
+        .col-4 {
+            width: 33.33%;
+        }
+    
+        .col-5 {
+            width: 41.66%;
+        }
+    
+        .col-6 {
+            width: 50%;
+        }
+    
+        .col-7 {
+            width: 58.33%;
+        }
+    
+        .col-8 {
+            width: 66.66%;
+        }
+    
+        .col-9 {
+            width: 75%;
+        }
+    
+        .col-10 {
+            width: 83.33%;
+        }
+    
+        .col-11 {
+            width: 91.66%;
+        }
+    
+        .col-12 {
+            width: 100%;
+        }
+    }
